@@ -40,6 +40,7 @@ namespace AddressBookSystems
         }
         public void GetContactInfo()
         {
+            int count=1;
             Console.Write("Enter First Name: ");
             First_Name = Console.ReadLine();
             Console.Write("Enter the Last Name: ");
@@ -57,6 +58,7 @@ namespace AddressBookSystems
             Console.Write("Enter the Email: ");
             Email = Console.ReadLine();
             Console.WriteLine();
+            count++;
         }
         
         public void Display()
@@ -70,5 +72,6 @@ namespace AddressBookSystems
             Console.WriteLine("Phone_No:" + Phone_No);
             Console.WriteLine("Email:" + Email);
         }
+
     }
 }
