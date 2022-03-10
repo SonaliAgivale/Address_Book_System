@@ -28,6 +28,12 @@ namespace AddressBookSystems
             this.Phone_No = Phone_No;
             this.Email = Email;
         }
+
+        internal static void Add(Contact contactList)
+        {
+            throw new NotImplementedException();
+        }
+
         public Contact()
         {
             GetContactInfo();
@@ -52,6 +58,7 @@ namespace AddressBookSystems
             Email = Console.ReadLine();
             Console.WriteLine();
         }
+        
         public void Display()
         {
             Console.WriteLine("********* Contact List *********");
